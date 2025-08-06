@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14-HI-Zomato Clone</title>
+    <!-- * Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- * Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- * Header -->
+    <div class="header">
+      <!-- Navigation -->
+      <div class="nav">
+        <!-- User -->
+        <div class="user-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <!-- Left -->
+        <div class="left">
+          <!-- Nav Item -->
+          <div class="nav-item">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <a href="#">Get the app</a>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+          <!-- Nav Item -->
+          <div class="nav-item">
+            <a href="#">Investor Relations</a>
+          </div>
+          <!-- Nav Item -->
+          <div class="nav-item">
+            <a href="#">Add Restaurant</a>
+          </div>
+          <!-- Nav Item -->
+          <div class="nav-item">
+            <a href="#">Login</a>
+          </div>
+          <!-- Nav Item -->
+          <div class="nav-item">
+            <a href="#">Signup</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Main -->
+    <div class="main">
+      <!-- Image -->
+      <img class="bg-image" src="./images/banner.png" alt="bg-image" />
+
+      <!-- Top -->
+      <div class="top">
+        <!-- Center Content -->
+        <div class="center-content">
+          <!-- Logo -->
+          <img src="./images/logo.png" id="logo" alt="logo-image" />
+
+          <!-- Title -->
+          <h2>Discover the best food & drinks in <span>Delhi NCR</span></h2>
+
+          <!-- Search -->
+          <div class="search-container">
+            <!-- locations -->
+            <div class="location">
+              <input
+                type="text"
+                placeholder="Ywca, 1, Ashoka Rd, Hanuman Road Area, Connaught Place, New Delhi, Delhi"
+                class="location-input"
+              />
+              <i class="fa-solid fa-angle-down" id="down-icon"></i>
+            </div>
+
+            <!-- line -->
+            <div class="line"></div>
+
+            <!-- search -->
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+              <input
+                type="text"
+                placeholder="Search for restaurant, cuisine or a dish"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Options -->
+    <!-- Tekrar tekrar aynı kodu yazmamak için yazılacak kodu bir class adı altında topladık (container) sonrasında gereken elemana bu classı verdik -->
+    <div class="container options">
+      <!-- Option Card 1 -->
+      <div class="option-card">
+        <!-- Image -->
+        <img src="./images/option-1.png" alt="option-card-image" />
+
+        <!-- Info -->
+        <div class="info">
+          <h2 class="info-title">Order Online</h2>
+          <p class="info-description">Stay home and order on your doorstep</p>
+        </div>
+      </div>
+      <!-- Option Card 2 -->
+      <div class="option-card">
+        <!-- Image -->
+        <img src="./images/option-2.png" alt="option-card-image" />
+
+        <!-- Info -->
+        <div class="info">
+          <h2 class="info-title">Dining</h2>
+          <p class="info-description">View the city's favorite dining venues</p>
+        </div>
+      </div>
+      <!-- Option Card 3 -->
+      <div class="option-card">
+        <!-- Image -->
+        <img src="./images/option-3.png" alt="option-card-image" />
+
+        <!-- Info -->
+        <div class="info">
+          <h2 class="info-title">Nightlife and Clubs</h2>
+          <p class="info-description">
+            Explore the city's top nightlife outlets
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Collections -->
+    <div class="container collections">
+      <!-- Heading -->
+      <div class="collection-heading">
+        <!-- Title -->
+        <h2 class="collection-title">Collections</h2>
+
+        <div class="subtitle-wrapper">
+          <!-- Subtitle -->
+          <h5 class="collection-subtitle">
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            Delhi NCR, based on trends
+          </h5>
+
+          <!-- See More -->
+          <a href="#" class="see-more">
+            All collections in Delhi NCR
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Collection List -->
+      <div class="collection-list">
+        <!-- Collection Card 1 -->
+        <div class="collection-card">
+          <!-- Image -->
+          <img src="./images/collection-1.png" alt="collection-card-image" />
+
+          <!-- Info -->
+          <div class="info">
+            <h2 class="title">Winners of Zomato Restaurant Awards</h2>
+            <p class="place-count">
+              32 Places <i class="fa-solid fa-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        <!-- Collection Card 2 -->
+        <div class="collection-card">
+          <!-- Image -->
+          <img src="./images/collection-2.png" alt="collection-card-image" />
+
+          <!-- Info -->
+          <div class="info">
+            <h2 class="title">22 Best Insta-worthy Places</h2>
+            <p class="place-count">
+              22 Places <i class="fa-solid fa-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        <!-- Collection Card 3 -->
+        <div class="collection-card">
+          <!-- Image -->
+          <img src="./images/collection-3.png" alt="collection-card-image" />
+
+          <!-- Info -->
+          <div class="info">
+            <h2 class="title">21 Romantic Dining Places</h2>
+            <p class="place-count">
+              21 Places <i class="fa-solid fa-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        <!-- Collection Card 4 -->
+        <div class="collection-card">
+          <!-- Image -->
+          <img src="./images/collection-4.png" alt="collection-card-image" />
+
+          <!-- Info -->
+          <div class="info">
+            <h2 class="title">18 Thrilling Live Cricket Screenings</h2>
+            <p class="place-count">
+              18 Places <i class="fa-solid fa-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Popular Locations -->
+    <div class="container popular-locations">
+      <!-- Title -->
+
+      <h1 class="popular-title">
+        Popular localities in and around <span>Delhi NCR</span>
+      </h1>
+
+      <!-- Locations -->
+      <div class="locations">
+        <!-- Location Card 1 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">Connaught Place</h2>
+            <p class="location-count">252 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 2 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">Sector 29</h2>
+            <p class="location-count">144 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 3 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">Sector 18, Noida</h2>
+            <p class="location-count">205 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 4 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">Rajouri Garden</h2>
+            <p class="location-count">296 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 5 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">Saket</h2>
+            <p class="location-count">307 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 6 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">DLF Cyber City</h2>
+            <p class="location-count">153 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 7 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">Golf Course Road</h2>
+            <p class="location-count">154 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 8 -->
+        <div class="location-card">
+          <!-- Info -->
+          <div class="location-info">
+            <h2 class="location-title">DLF Phase 4</h2>
+            <p class="location-count">221 Places</p>
+          </div>
+
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- Location Card 9 -->
+        <div class="location-card last-card">
+          <p class="center-text">see more</p>
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- * App Sections -->
+    <div class="container app-section">
+      <!-- Image -->
+      <div class="phone-image">
+        <img src="./images/phone.png" alt="phone-image" />
+      </div>
+
+      <!-- Info -->
+      <div class="app-info">
+        <!-- Title -->
+        <h2 class="info-title">Get the Zomato app</h2>
+
+        <!-- Description -->
+        <p class="info-description">
+          We will send you a link, open it on your phone to download the app
+        </p>
+
+        <!-- Options -->
+        <div class="options">
+          <!-- Option Item -->
+          <div class="option-item">
+            <input type="radio" id="email" name="option-item" />
+            <label for="email">Email</label>
+          </div>
+          <!-- Option Item -->
+          <div class="option-item">
+            <input type="radio" id="phone" name="option-item" />
+            <label for="phone">Phone</label>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form>
+          <!-- Input -->
+          <input type="email" placeholder="Email" />
+          <!-- Button -->
+          <button>Share App Link</button>
+        </form>
+
+        <!-- Store Logos -->
+        <div class="store">
+          <!-- Caption -->
+          <p class="caption">Download app from</p>
+
+          <!-- Logos -->
+          <div class="logos">
+            <img src="./images/playstore.png" alt="store-logo" />
+            <img src="./images/appstore.png" alt="store-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Explore Sections -->
+    <div class="container explore-section">
+      <!-- Title -->
+      <h2 class="title">Explore options near me</h2>
+      <!-- Explore Container -->
+      <div class="explore-container">
+        <!-- Explore Item 1 -->
+        <div class="explore-item">
+          <!-- Text -->
+          <p class="text">Popular cuisines near me</p>
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <!-- Explore Item 2 -->
+        <div class="explore-item">
+          <!-- Text -->
+          <p class="text">Popular restaurant types near me</p>
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <!-- Explore Item 3 -->
+        <div class="explore-item">
+          <!-- Text -->
+          <p class="text">Top restraunt chains</p>
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <!-- Explore Item 4 -->
+        <div class="explore-item">
+          <!-- Text -->
+          <p class="text">Cities we deliver to</p>
+          <!-- Icon -->
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Footer -->
+    <div class="footer">
+      <div class="container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <!-- Logo -->
+          <img class="logo" src="./images/zomatologo.png" alt="logo" />
+
+          <!-- Country && Language -->
+          <div class="footer-top-wrapper">
+            <div class="item">
+              <!-- Image -->
+              <img src="./images/turkey.png" alt="flag-image" />
+
+              <!-- Text -->
+              <p>Turkey</p>
+
+              <!-- Icon -->
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="item">
+              <!-- Text -->
+              <p>English</p>
+              <!-- Icon -->
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            By proceeding, you agree to our Terms of Service, Cookie Policy,
+            Privacy Policy and Content Policy. All trademarks belong to their
+            respective owners. © 2025 Zomato™ Ltd. All rights reserved.
+          </div>
+
+          <div class="madeby">Made by: Mehmet Musab Kara</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
